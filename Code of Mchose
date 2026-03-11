@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gaming Store</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f10;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:black;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+}
+
+.hero{
+height:70vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+background:url("https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b") center/cover;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero button{
+padding:12px 30px;
+background:#ff3c3c;
+border:none;
+color:white;
+font-size:18px;
+}
+
+.products{
+padding:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1b1b1d;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+.price{
+color:#ff3c3c;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:black;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Gaming Store</div>
+<nav>
+<a href="#">Inicio</a>
+<a href="#">Teclados</a>
+<a href="#">Ratones</a>
+<a href="#">Contacto</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Next Level Gaming</h1>
+<button>Comprar</button>
+</section>
+
+<section class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+<h3>Mechanical Keyboard</h3>
+<p class="price">$129</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7">
+<h3>Gaming Mouse</h3>
+<p class="price">$59</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd">
+<h3>Gaming Headset</h3>
+<p class="price">$139</p>
+</div>
+
+</section>
+
+<footer>
+<p>© Gaming Store</p>
+</footer>
+
+</body>
+</html>
